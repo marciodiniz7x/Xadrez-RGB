@@ -47,6 +47,8 @@ for (let i = 0; i < 8; i++) {
 const square = document.querySelector('.square');
 const squares = document.querySelectorAll('.square');
 
+const botoes = document.querySelector('button');
+
 bloody.addEventListener('click', function() {
 
     body.style.background = 'url(img/bg01-verm.png)';
