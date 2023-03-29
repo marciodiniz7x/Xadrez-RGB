@@ -3,6 +3,7 @@ const bloody = document.querySelector('.bloody');
 const evil = document.querySelector('.evil');
 const fairy = document.querySelector('.fairy');
 const bee = document.querySelector('.bee');
+const dark = document.querySelector('.dark');
 const stock = document.querySelector('.stock');
 
 const body = document.querySelector('body');
@@ -100,6 +101,21 @@ bee.addEventListener('click', function() {
         square.style.opacity = '0';
         setTimeout(() => {
             square.style.background = 'var(--cor-bee)';
+            square.style.opacity = '1';
+        }, 200);
+    });
+
+});
+
+dark.addEventListener('click', function() {
+
+    body.style.background = 'url(img/bg01.jpg)';
+    totalArea.style.boxShadow = 'var(--shadow-dark)';
+    totalArea.style.background = 'var(--bg-dark)';
+    squares.forEach(function(square) {
+        square.style.opacity = '0';
+        setTimeout(() => {
+            square.style.background = 'var(--cor-dark)';
             square.style.opacity = '1';
         }, 200);
     });
