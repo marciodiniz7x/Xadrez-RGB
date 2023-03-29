@@ -12,33 +12,26 @@ const totalArea = document.querySelector('.total-area');
 // Seleciona tabuleiro
 const board = document.querySelector('.board'); 
 
+// Seleciona as coordenadas do tabuleiro
+const coord = document.querySelector('.coord');
+
+// Cria as coordenadas
+
+
 // Loop para adicionar linhas até que tenham 8
 for (let i = 0; i < 8; i++) {
 
-    // Cria o elemento de linha de acordo com o loop
     const row = document.createElement('tr');
-
-    // Loop para adicionar 8 celulas em cada linha
     for (let j = 0; j < 8; j++) {
-
-        // Cria o elemento de celula
         const cell = document.createElement('td');
-
         // Verifica se a  soma dos índices da linha e coluna é par
         if ((i+j) % 2 === 0) {
-            // Par cria uma quadrado preto
             cell.classList.add('square-black'); 
         } else {
-            // Ímpar criar um quadrado
             cell.classList.add('square');
         }
-
-        // Adiciona a célua criada na linha atual
         row.appendChild(cell);
-
     }
-
-    // Adiciona a linha atual na tabela
     board.appendChild(row);
 
 }
