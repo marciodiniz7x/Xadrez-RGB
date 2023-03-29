@@ -42,6 +42,9 @@ const squares = document.querySelectorAll('.square');
 
 const buttons = document.querySelectorAll('.button');
 
+// Inicia com o botão Stock ativado
+stock.classList.add('active');
+
 // Percorre cada botão e adiciona um listener click
 buttons.forEach(function(button) {
     button.addEventListener('click', () => {
