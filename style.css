@@ -154,29 +154,32 @@ body {
 }
 
 .light .bloody {
-    background-color: red;
+    border: 3px solid red;
+    color: rgb(250, 88, 88);
     padding: 10px;
     border-radius: 10px;
-    color: white;
+    font-weight: 500;
     transition: 400ms;
     cursor: pointer;
     
 }
 .light .bloody:hover {
-    background-color: rgb(253, 134, 134);
+    color: white;
+    background-color: red;
 }
 
 .light .evil {
-    background-color: rgb(122, 16, 243);
+    border: 3px solid #7a10f3;
+    color: #a55bfa;
+    font-weight: 500;
     padding: 10px;
-    border: 2px solid rgba(255, 255, 255, 0);
     border-radius: 10px;
-    color: white;
     transition: 400ms;
     cursor: pointer;
 }
 .light .evil:hover {
-    background-color: rgb(174, 103, 255);
+    color: white;
+    background-color: #7a10f3;
 }
 
 .light .fairy {
