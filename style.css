@@ -183,58 +183,60 @@ body {
 }
 
 .light .fairy {
-    background-color: rgb(10, 192, 4);
+    border: 3px solid #0ac004;
+    color: #92f78f;
+    font-weight: 500;
     padding: 10px;
-    border: 2px solid rgba(255, 255, 255, 0);
     border-radius: 10px;
-    color: white;
     transition: 400ms;
     cursor: pointer;
 }
 .light .fairy:hover {
-    background-color: rgb(123, 245, 119);
+    background-color: #0ac004;
+    color: white;
 }
 
 .light .bee {
-    background-color: #ffd000;
+    border: 3px solid #ffd000;
+    color: #f5d547;
+    font-weight: 500;
     padding: 10px;
-    border: 2px solid rgba(255, 255, 255, 0);
     border-radius: 10px;
-    color: rgb(82, 81, 81);
     transition: 400ms;
     cursor: pointer;
 }
 .light .bee:hover {
-    background-color: rgb(245, 245, 147);
+    color: rgb(70, 69, 69);
+    background-color: #ffd000;
 }
 
 .light .dark {
-    background-color: rgb(57, 53, 71);
-    
+    border: 3px solid #575172;
+    color: #9b93b9;
+    font-weight: 500;
     padding: 10px;
-    border: 2px solid rgba(255, 255, 255, 0);
+    
     border-radius: 10px;
-    color: white;
     transition: 400ms;
     cursor: pointer;
 }
 .light .dark:hover {
-    background-color: rgb(113, 103, 122);
+    background-color: #575172;
     color: white;
 }
 
 .light .stock {
-    background-color: white;
+    border: 3px solid white;
+    color: white;
+    font-weight: 500;
     padding: 10px;
-    border: 2px solid rgba(255, 255, 255, 0);
     border-radius: 10px;
-    color: rgb(82, 81, 81);
     transition: 400ms;
     cursor: pointer;
 }
 .light .stock:hover {
-    background-color: rgb(107, 104, 104);
-    color: white;
+    background-color: white;
+    color: black;
 }
 
 
