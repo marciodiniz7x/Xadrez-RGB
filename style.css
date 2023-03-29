@@ -1,0 +1,219 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Tema Bloody */
+    --cor-bloody: linear-gradient(to bottom right, red, #f59ccd);
+    --bg-bloody: red;
+    --shadow-bloody: 1px 1px 50px 1px #f72c2c;
+
+    /* Tema Evil */
+    --cor-evil: linear-gradient(to bottom right, #5c32f5, #b79cf5);
+    --bg-evil: #5c32f5;
+    --shadow-evil: 1px 1px 50px 1px #2c3af7;
+
+    /* Tema Fairy */
+    --cor-fairy: linear-gradient(to bottom right, #029b02, #67e7a1);
+    --bg-fairy: #029b02;
+    --shadow-fairy: 1px 1px 50px 1px #029b02;
+
+    /* Tema Bee */
+    --cor-bee: linear-gradient(to bottom right, #FF9900, #FFFF99);
+    --bg-bee: #ffc400;
+    --shadow-bee: 1px 1px 50px 1px #ffc400;
+
+    /* Tema Stock */
+    --cor-stock: linear-gradient(to bottom right, rgb(197, 196, 196), white);
+    --bg-stock: white;
+    --shadow-stock: 1px 1px 50px 1px white;
+}
+
+body {
+    background: url(img/bg01.jpg);
+    transition: 400ms;
+}
+
+.total-area {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 810px;
+    height: 810px;
+    
+    box-shadow: var(--shadow-stock);
+    background: var(--bg-stock);
+    transition: 500ms;
+
+}
+
+.square {
+    background: var(--cor-stock);
+    width: 87.5px;
+    height: 87.3px;
+    transition: 500ms;
+}
+
+.square-black {
+    background: linear-gradient(to bottom right, black, rgb(51, 51, 51));
+    width: 87.5px;
+    height: 87.3px;
+}
+
+.skin {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 800px;
+    background: url(img/bg02.png);
+    
+    background-size: 100%;
+    background-position: center;
+    
+}
+.coord {
+    position: absolute;
+    color: white;
+    font-family: "Rubik";
+}
+
+.vert {
+    height: 630px;
+    margin-left: 20px;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.horiz {
+    width: 620px;
+    margin-left: 90px;
+    margin-top: 50px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.board {
+    display: grid;
+    border-collapse: collapse;
+    border-spacing: 0;
+    gap: 0;
+    grid-auto-flow: dense;
+    position: relative;
+    gap: 0px;
+    width: 700px;
+    height: 700px;
+    border: 1px solid aliceblue;
+    background-color: black;
+    
+}
+
+.black {
+    background: rgb(29, 28, 28);
+}
+
+.light {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 120px;
+    font-family: "Rubik";
+    
+    gap: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 300px;
+    margin-left: 1vw;
+    font-size: 19px;
+}
+
+.light span {
+    color: white;
+    font-weight: 500;
+    
+    margin: 10px;
+}
+
+.light .bloody {
+    background-color: red;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    transition: 400ms;
+    cursor: pointer;
+    
+}
+.light .bloody:hover {
+    background-color: rgb(253, 134, 134);
+}
+
+.light .evil {
+    background-color: rgb(122, 16, 243);
+    padding: 10px;
+    border: 2px solid rgba(255, 255, 255, 0);
+    border-radius: 10px;
+    color: white;
+    transition: 400ms;
+    cursor: pointer;
+}
+.light .evil:hover {
+    background-color: rgb(174, 103, 255);
+}
+
+.light .fairy {
+    background-color: rgb(10, 192, 4);
+    padding: 10px;
+    border: 2px solid rgba(255, 255, 255, 0);
+    border-radius: 10px;
+    color: white;
+    transition: 400ms;
+    cursor: pointer;
+}
+.light .fairy:hover {
+    background-color: rgb(123, 245, 119);
+}
+
+.light .bee {
+    background-color: #ffd000;
+    padding: 10px;
+    border: 2px solid rgba(255, 255, 255, 0);
+    border-radius: 10px;
+    color: rgb(82, 81, 81);
+    transition: 400ms;
+    cursor: pointer;
+}
+.light .bee:hover {
+    background-color: rgb(245, 245, 147);
+}
+
+.light .stock {
+    background-color: white;
+    padding: 10px;
+    border: 2px solid rgba(255, 255, 255, 0);
+    border-radius: 10px;
+    color: rgb(82, 81, 81);
+    transition: 400ms;
+    cursor: pointer;
+}
+.light .stock:hover {
+    background-color: rgb(53, 52, 52);
+    color: white;
+}
+
+
+
+
+
