@@ -26,10 +26,16 @@
     --bg-bee: #ffc400;
     --shadow-bee: 1px 1px 50px 1px #ffc400;
 
+    /* Tema Darkness */
+    --cor-dark: linear-gradient(to bottom right, #52525c, rgb(70, 68, 68));
+    --bg-dark: #313142;
+    --shadow-dark: 1px 1px 50px 1px #3e3e52;
+
     /* Tema Stock */
     --cor-stock: linear-gradient(to bottom right, rgb(197, 196, 196), white);
     --bg-stock: white;
     --shadow-stock: 1px 1px 50px 1px white;
+
 }
 
 body {
@@ -199,6 +205,21 @@ body {
     background-color: rgb(245, 245, 147);
 }
 
+.light .dark {
+    background-color: rgb(57, 53, 71);
+    
+    padding: 10px;
+    border: 2px solid rgba(255, 255, 255, 0);
+    border-radius: 10px;
+    color: white;
+    transition: 400ms;
+    cursor: pointer;
+}
+.light .dark:hover {
+    background-color: rgb(113, 103, 122);
+    color: white;
+}
+
 .light .stock {
     background-color: white;
     padding: 10px;
@@ -209,7 +230,7 @@ body {
     cursor: pointer;
 }
 .light .stock:hover {
-    background-color: rgb(53, 52, 52);
+    background-color: rgb(107, 104, 104);
     color: white;
 }
 
