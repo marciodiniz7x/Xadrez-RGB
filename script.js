@@ -1,3 +1,4 @@
+
 const bloody = document.querySelector('.bloody');
 const evil = document.querySelector('.evil');
 const fairy = document.querySelector('.fairy');
@@ -6,6 +7,42 @@ const stock = document.querySelector('.stock');
 
 const body = document.querySelector('body');
 const totalArea = document.querySelector('.total-area');
+
+// Seleciona tabuleiro
+const board = document.querySelector('.board'); 
+
+// Loop para adicionar linhas até que tenham 8
+for (let i = 0; i < 8; i++) {
+
+    // Cria o elemento de linha de acordo com o loop
+    const row = document.createElement('tr');
+
+    // Loop para adicionar 8 celulas em cada linha
+    for (let j = 0; j < 8; j++) {
+
+        // Cria o elemento de celula
+        const cell = document.createElement('td');
+
+        // Verifica se a  soma dos índices da linha e coluna é par
+        if ((i+j) % 2 === 0) {
+            // Par cria uma quadrado preto
+            cell.classList.add('square-black'); 
+        } else {
+            // Ímpar criar um quadrado
+            cell.classList.add('square');
+        }
+
+        // Adiciona a célua criada na linha atual
+        row.appendChild(cell);
+
+    }
+
+    // Adiciona a linha atual na tabela
+    board.appendChild(row);
+
+}
+
+// Seletores dos elementos criados via loop
 const square = document.querySelector('.square');
 const squares = document.querySelectorAll('.square');
 
