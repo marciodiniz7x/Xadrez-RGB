@@ -109,7 +109,7 @@ bee.addEventListener('click', function() {
 
 dark.addEventListener('click', function() {
 
-    body.style.background = 'url(img/bg01.jpg)';
+    body.style.background = 'url(img/bg01-dark.png)';
     totalArea.style.boxShadow = 'var(--shadow-dark)';
     totalArea.style.background = 'var(--bg-dark)';
     squares.forEach(function(square) {
