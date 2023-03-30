@@ -15,7 +15,9 @@ const board = document.querySelector('.board');
 // Seleciona as coordenadas do tabuleiro
 const coord = document.querySelector('.coord');
 
-// Cria as coordenadas
+// Efeitos sonoros
+const audio01 = new Audio("aud/sound01.mp3");
+const audio02 = new Audio("aud/sound02.mp3");
 
 
 // Loop para adicionar linhas até que tenham 8
@@ -40,7 +42,27 @@ for (let i = 0; i < 8; i++) {
 const square = document.querySelector('.square');
 const squares = document.querySelectorAll('.square');
 
+
 const buttons = document.querySelectorAll('.button');
+
+
+// Toca efeitos sonoros
+
+const tocarSom = () => {
+    audio01.play();
+}
+
+buttons.forEach(button => {
+    
+    // Toca efeitos sonoros
+    button.addEventListener('mouseover', tocarSom);
+    button.addEventListener('click', tocarSom);
+    
+});
+
+
+
+
 
 // Inicia com o botão Stock ativado
 stock.classList.add('active');
@@ -48,6 +70,8 @@ stock.classList.add('active');
 // Percorre cada botão e adiciona um listener click
 buttons.forEach(function(button) {
     button.addEventListener('click', () => {
+
+        
 
         // Remove a classe active de todos os botões
         buttons.forEach(function(button) {
@@ -135,6 +159,6 @@ buttons.forEach(function(button) {
                 break;
         }
     })
-})
+});
 
 
