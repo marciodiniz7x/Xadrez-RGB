@@ -16,8 +16,7 @@ const board = document.querySelector('.board');
 const coord = document.querySelector('.coord');
 
 // Efeitos sonoros
-const audio01 = new Audio("aud/sound01.mp3");
-const audio02 = new Audio("aud/sound02.mp3");
+
 
 
 // Loop para adicionar linhas até que tenham 8
@@ -41,12 +40,12 @@ for (let i = 0; i < 8; i++) {
 // Seletores dos elementos criados via loop
 const square = document.querySelector('.square');
 const squares = document.querySelectorAll('.square');
-
-
 const buttons = document.querySelectorAll('.button');
 
-
 // Toca efeitos sonoros
+const audio01 = new Audio("aud/sound01.mp3");
+const audio02 = new Audio("aud/sound02.mp3");
+
 const tocar02 = () => {
     audio02.play();
 }
@@ -58,18 +57,12 @@ buttons.forEach(button => {
     
 });
 
-
-
-
-
 // Inicia com o botão Stock ativado
 stock.classList.add('active');
 
 // Percorre cada botão e adiciona um listener click
 buttons.forEach(function(button) {
     button.addEventListener('click', () => {
-
-        
 
         // Remove a classe active de todos os botões
         buttons.forEach(function(button) {
