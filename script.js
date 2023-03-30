@@ -48,15 +48,19 @@ const buttons = document.querySelectorAll('.button');
 
 // Toca efeitos sonoros
 
-const tocarSom = () => {
+const tocar01 = () => {
     audio01.play();
+}
+
+const tocar02 = () => {
+    audio02.play();
 }
 
 buttons.forEach(button => {
     
     // Toca efeitos sonoros
-    button.addEventListener('mouseover', tocarSom);
-    button.addEventListener('click', tocarSom);
+    button.addEventListener('mouseover', tocar01);
+    button.addEventListener('click', tocarSom(acao));
     
 });
 
