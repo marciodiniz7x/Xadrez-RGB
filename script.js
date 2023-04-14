@@ -128,3 +128,7 @@ buttons.forEach(function(button) {
         }
     })
 });
+
+// Inicia com o botão Stock ativado
+stock.classList.add('active');
+
