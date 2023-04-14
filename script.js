@@ -132,3 +132,18 @@ buttons.forEach(function(button) {
 // Inicia com o botão Stock ativado
 stock.classList.add('active');
 
+// Toca efeitos sonoros
+const audio01 = new Audio("aud/sound01.mp3");
+const audio02 = new Audio("aud/sound02.mp3");
+
+const tocar02 = () => {
+    audio02.play();
+}
+
+buttons.forEach(button => {
+    
+    // Toca efeitos sonoros
+    button.addEventListener('click', tocar02);
+    
+});
+
