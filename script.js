@@ -148,3 +148,50 @@ buttons.forEach(button => {
 });
 
 // Adicionando as peças
+const pieces = {
+    'rook': '&#9820;',
+    'knight': '&#9822;',
+    'bishop': '&#9821;',
+    'queen': '&#9819;',
+    'king': '&#9818;',
+    'pawn': '&#9823;'
+  }
+  
+  // Adiciona as peças pretas
+  board.rows[0].cells[0].innerHTML = pieces.rook;
+  board.rows[0].cells[1].innerHTML = pieces.knight;
+  board.rows[0].cells[2].innerHTML = pieces.bishop;
+  board.rows[0].cells[3].innerHTML = pieces.queen;
+  board.rows[0].cells[4].innerHTML = pieces.king;
+  board.rows[0].cells[5].innerHTML = pieces.bishop;
+  board.rows[0].cells[6].innerHTML = pieces.knight;
+  board.rows[0].cells[7].innerHTML = pieces.rook;
+  
+  for (let i = 0; i < 8; i++) {
+    board.rows[1].cells[i].innerHTML = pieces.pawn;
+  }
+  
+  // Adiciona as peças brancas
+  board.rows[7].cells[0].innerHTML = pieces.rook;
+  board.rows[7].cells[1].innerHTML = pieces.knight;
+  board.rows[7].cells[2].innerHTML = pieces.bishop;
+  board.rows[7].cells[3].innerHTML = pieces.queen;
+  board.rows[7].cells[4].innerHTML = pieces.king;
+  board.rows[7].cells[5].innerHTML = pieces.bishop;
+  board.rows[7].cells[6].innerHTML = pieces.knight;
+  board.rows[7].cells[7].innerHTML = pieces.rook;
+  
+  for (let i = 0; i < 8; i++) {
+    board.rows[6].cells[i].innerHTML = pieces.pawn;
+  }
+  
+  // Define as classes das peças
+  const blackPieces = document.querySelectorAll('tr:nth-child(1) td, tr:nth-child(2) td');
+  const whitePieces = document.querySelectorAll('tr:nth-child(7) td, tr:nth-child(8) td');
+  blackPieces.forEach(piece => {
+    piece.classList.add('black-piece');
+  });
+  whitePieces.forEach(piece => {
+    piece.classList.add('white-piece');
+  });
+  
