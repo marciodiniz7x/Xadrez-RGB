@@ -147,3 +147,4 @@ buttons.forEach(button => {
     
 });
 
+// Adicionando as peças
