@@ -272,39 +272,39 @@ body {
     height: 50px;
     border-radius: 50%;
     position: absolute;
-  }
-  
-  .piece[data-color="white"] {
-    background-color: #f0d9b5;
-  }
-  
-  .piece[data-color="black"] {
-    background-color: #b58863;
-  }
-  
-  .piece[data-type="pawn"]::before {
-    content: "♙";
-  }
-  
-  .piece[data-type="knight"]::before {
-    content: "♘";
-  }
-  
-  .piece[data-type="bishop"]::before {
-    content: "♗";
-  }
-  
-  .piece[data-type="rook"]::before {
-    content: "♖";
-  }
-  
-  .piece[data-type="queen"]::before {
-    content: "♕";
-  }
-  
-  .piece[data-type="king"]::before {
-    content: "♔";
-  }
+}
+
+.piece[data-color="white"] {
+background-color: #f0d9b5;
+}
+
+.piece[data-color="black"] {
+background-color: #b58863;
+}
+
+.piece[data-type="pawn"]::before {
+content: "♙";
+}
+
+.piece[data-type="knight"]::before {
+content: "♘";
+}
+
+.piece[data-type="bishop"]::before {
+content: "♗";
+}
+
+.piece[data-type="rook"]::before {
+content: "♖";
+}
+
+.piece[data-type="queen"]::before {
+content: "♕";
+}
+
+.piece[data-type="king"]::before {
+content: "♔";
+}
   
 
 
