@@ -188,9 +188,21 @@ const tocar02 = () => {
     audio02.play();
 }
 
+const tocar01 = () => {
+    audio01.play();
+}
+
 buttons.forEach(button => {
     
     // Toca efeitos sonoros
     button.addEventListener('click', tocar02);
     
 });
+
+blackPieces.forEach(piece => {
+    piece.addEventListener('click', tocar02)
+});
+
+whitePieces.forEach(piece => {
+    piece.addEventListener('click', tocar02)
+})
