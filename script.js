@@ -22,9 +22,9 @@ for (let i = 0; i < 8; i++) {
         const cell = document.createElement('td');
         // Verifica se a  soma dos índices da linha e coluna é par
         if ((i+j) % 2 === 0) {
-            cell.classList.add('square-black'); 
+            cell.classList.add('square'); 
         } else {
-            cell.classList.add('square');
+            cell.classList.add('square-black');
         }
         row.appendChild(cell);
     }
@@ -132,21 +132,6 @@ buttons.forEach(function(button) {
 // Inicia com o botão Stock ativado
 stock.classList.add('active');
 
-// Toca efeitos sonoros
-const audio01 = new Audio("aud/sound01.mp3");
-const audio02 = new Audio("aud/sound02.mp3");
-
-const tocar02 = () => {
-    audio02.play();
-}
-
-buttons.forEach(button => {
-    
-    // Toca efeitos sonoros
-    button.addEventListener('click', tocar02);
-    
-});
-
 // Adicionando as peças
 const pieces = {
     'rook': '&#9820;',
@@ -195,3 +180,17 @@ whitePieces.forEach(piece => {
 piece.classList.add('white-piece');
 });
 
+// Toca efeitos sonoros
+const audio01 = new Audio("aud/sound01.mp3");
+const audio02 = new Audio("aud/sound02.mp3");
+
+const tocar02 = () => {
+    audio02.play();
+}
+
+buttons.forEach(button => {
+    
+    // Toca efeitos sonoros
+    button.addEventListener('click', tocar02);
+    
+});
