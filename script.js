@@ -195,7 +195,7 @@ const tocar01 = () => {
 buttons.forEach(button => {
     
     // Toca efeitos sonoros
-    button.addEventListener('click', tocar02);
+    button.addEventListener('click', tocar01);
     
 });
 
